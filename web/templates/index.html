@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>股票代码录入</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>股票数据分析系统</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="symbol">股票代码：</label>
+                <input type="text" id="symbol" name="symbol" required>
+            </div>
+            <button type="submit" class="btn">提交</button>
+        </form>
+    </div>
+</body>
+</html>
